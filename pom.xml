@@ -7,6 +7,7 @@
     <groupId>com.autoapitest</groupId>
     <artifactId>FunctionService</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
 
     <parent>
