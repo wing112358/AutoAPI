@@ -161,7 +161,6 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>test-xml/mainTest.xml</suiteXmlFile>
-                        <suiteXmlFile>test-xml/comsumerTest.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

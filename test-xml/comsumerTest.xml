@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="增加客户后操作" verbose="10" time-out="600000" allow-return-values="true">
-
-
-    <listeners>
-        <listener class-name="com.autoapitest.FunctionService.system.utils.TestngListener"/>
-    </listeners>
-</suite>
