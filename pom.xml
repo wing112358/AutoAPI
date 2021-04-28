@@ -140,7 +140,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>test-xml/*.xml</suiteXmlFile>
+                        <suiteXmlFile>test-xml/mainTest.xml</suiteXmlFile>
+                        <suiteXmlFile>test-xml/comsumerTest.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
