@@ -35,4 +35,7 @@
             <!--</class>-->
         </classes>
     </test>
+    <listeners>
+        <listener class-name="com.autoapitest.FunctionService.system.utils.TestngListener"/>
+    </listeners>
 </suite>
