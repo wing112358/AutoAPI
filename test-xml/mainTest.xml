@@ -54,4 +54,5 @@
     <listeners>
         <listener class-name="com.autoapitest.FunctionService.system.utils.TestngListener"/>
     </listeners>
+    <!--<parameter name="ENV" value="${ENV}"/>-->
 </suite>

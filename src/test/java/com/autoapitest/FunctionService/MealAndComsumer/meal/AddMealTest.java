@@ -6,6 +6,7 @@ import com.autoapitest.FunctionService.BaseTest;
 import com.autoapitest.FunctionService.Function.addFunction.AddFuncitonTest;
 import com.autoapitest.FunctionService.LoginTest;
 import com.autoapitest.FunctionService.entity.MealEntity;
+import com.autoapitest.FunctionService.params.Common.Environment;
 import com.autoapitest.FunctionService.params.MealAndComsumer.AddMealReq;
 import com.autoapitest.FunctionService.params.MealAndComsumer.DeleteMealReq;
 import com.autoapitest.FunctionService.system.utils.JSON;
@@ -95,7 +96,7 @@ public class AddMealTest extends BaseTest {
 
         //发送请求
         try{
-            response = addmealservice.addMeal(param,result,loginheader);
+            response = addmealservice.addMeal(param,result,loginheader, Environment.Dev,"item");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -172,7 +173,7 @@ public class AddMealTest extends BaseTest {
 
         DeleteMealReq deleteparam = new DeleteMealReq(id);
 
-        JSONObject deleteresponse = deletemealservice.deleteMeal(deleteparam,"操作成功",header);
+        JSONObject deleteresponse = deletemealservice.deleteMeal(deleteparam,"操作成功",header, Environment.Dev,"item");
 
         //处理返回
         Integer flag=0;

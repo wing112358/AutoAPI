@@ -4,6 +4,7 @@ package com.autoapitest.FunctionService.User;
 import com.alibaba.fastjson.JSONObject;
 import com.autoapitest.FunctionService.BaseTest;
 import com.autoapitest.FunctionService.LoginTest;
+import com.autoapitest.FunctionService.params.Common.Environment;
 import com.autoapitest.FunctionService.params.User.UpdateUserReq;
 import com.autoapitest.FunctionService.system.utils.JSON;
 import com.autoapitest.FunctionService.system.utils.XmlHandler;
@@ -82,7 +83,7 @@ public class UpdateUserInfoTest extends BaseTest {
 
         //发送请求
         try{
-            response = updateuserinfoservice.updateUserInfo(param,result,loginheader);
+            response = updateuserinfoservice.updateUserInfo(param,result,loginheader, Environment.Dev,"item");
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,6 +1,7 @@
 package com.autoapitest.FunctionService;
 
 import com.alibaba.fastjson.JSONObject;
+import com.autoapitest.FunctionService.params.Common.Environment;
 import com.autoapitest.FunctionService.params.Login.LoginReq;
 import com.autoapitest.FunctionService.service.Login.LoginService;
 import com.autoapitest.FunctionService.system.utils.JSON;
@@ -32,7 +33,7 @@ public class LoginTest extends BaseTest {
 
         try {
             //发送登录接口
-            response =new LoginService().login(loginparam,expectedresult,flag);
+            response =new LoginService().login(loginparam,expectedresult,flag, Environment.Dev,"item");
         } catch (IOException e) {
             e.printStackTrace();
         }

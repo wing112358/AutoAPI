@@ -1,9 +1,11 @@
 package com.autoapitest.FunctionService.service.User;
 
 import com.alibaba.fastjson.JSONObject;
+import com.autoapitest.FunctionService.params.Common.Environment;
 import com.autoapitest.FunctionService.params.Common.Response;
 import com.autoapitest.FunctionService.params.User.DeleteUserReq;
 import com.autoapitest.FunctionService.service.BasciService;
+import com.autoapitest.FunctionService.system.utils.GetEnvironment;
 import com.autoapitest.FunctionService.system.utils.GetResponse;
 import com.autoapitest.FunctionService.system.utils.JSON;
 import com.autoapitest.FunctionService.system.utils.Tools;
@@ -30,8 +32,9 @@ public class DeleteUserService extends BasciService {
      * @param headers
      * @return
      */
-    public JSONObject deleteUser(DeleteUserReq param, String result, Header[] headers) throws IOException {
+    public JSONObject deleteUser(DeleteUserReq param, String result, Header[] headers, Environment envir, String servicename) throws IOException {
 
+        String BASEURL=new GetEnvironment().getUrl(envir,servicename);
         //发送请求
         Response response = new GetResponse().get(BASEURL+DELETE_USER_URL,param,null,headers);
 

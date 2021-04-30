@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.autoapitest.FunctionService.BaseTest;
 import com.autoapitest.FunctionService.LoginTest;
 import com.autoapitest.FunctionService.entity.UserEntity;
+import com.autoapitest.FunctionService.params.Common.Environment;
 import com.autoapitest.FunctionService.params.User.AddUserReq;
 import com.autoapitest.FunctionService.params.User.DeleteUserReq;
 import com.autoapitest.FunctionService.system.utils.JSON;
@@ -94,7 +95,7 @@ public class AddUserTest extends BaseTest {
 
         //发送请求
         try{
-            response = adduserservice.addUser(param,result,loginheader);
+            response = adduserservice.addUser(param,result,loginheader, Environment.Dev,"item");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -167,7 +168,7 @@ public class AddUserTest extends BaseTest {
         DeleteUserReq deleteparam = new DeleteUserReq(Id);
 
         //调用删除公司接口
-        JSONObject deleteresponse = deleteuserservice.deleteUser(deleteparam,"操作成功",header);
+        JSONObject deleteresponse = deleteuserservice.deleteUser(deleteparam,"操作成功",header, Environment.Dev,"item");
 
         //处理返回
         Integer flag=0;

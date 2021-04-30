@@ -1,8 +1,10 @@
 package com.autoapitest.FunctionService.service.Function;
 
 import com.alibaba.fastjson.JSONObject;
+import com.autoapitest.FunctionService.params.Common.Environment;
 import com.autoapitest.FunctionService.params.Common.Response;
 import com.autoapitest.FunctionService.service.BasciService;
+import com.autoapitest.FunctionService.system.utils.GetEnvironment;
 import com.autoapitest.FunctionService.system.utils.GetResponse;
 import com.autoapitest.FunctionService.system.utils.JSON;
 import com.autoapitest.FunctionService.system.utils.Tools;
@@ -35,8 +37,9 @@ public class GetFunctionTreeService extends BasciService {
      * @author wing
      */
 
-    public JSONObject getfunctiontree(String result, Header[] headers) throws IOException {
+    public JSONObject getfunctiontree(String result, Header[] headers, Environment envir, String servicename) throws IOException {
 
+        String BASEURL=new GetEnvironment().getUrl(envir,servicename);
 
         //发送请求
         Response response = new GetResponse().get(BASEURL+GET_FUNCTION_TREE_URL,null,null,headers);

@@ -6,6 +6,7 @@ import com.autoapitest.FunctionService.BaseTest;
 import com.autoapitest.FunctionService.LoginTest;
 import com.autoapitest.FunctionService.MealAndComsumer.meal.AddMealTest;
 import com.autoapitest.FunctionService.entity.ComsumerEntity;
+import com.autoapitest.FunctionService.params.Common.Environment;
 import com.autoapitest.FunctionService.params.MealAndComsumer.AddConsumerReq;
 import com.autoapitest.FunctionService.params.MealAndComsumer.DeleteConsumerReq;
 import com.autoapitest.FunctionService.system.utils.JSON;
@@ -84,7 +85,7 @@ public class AddComsumerTest extends BaseTest {
 
         //发送请求
         try{
-            response = addcomsumerservice.addComsumer(param,result,loginheader);
+            response = addcomsumerservice.addComsumer(param,result,loginheader, Environment.Dev,"item");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -147,7 +148,7 @@ public class AddComsumerTest extends BaseTest {
         DeleteConsumerReq deleteparam = new DeleteConsumerReq(Id);
 
         //调用删除公司接口
-        JSONObject deleteresponse = deletecomsumerservice.deleteComsumer(deleteparam,"操作成功",header);
+        JSONObject deleteresponse = deletecomsumerservice.deleteComsumer(deleteparam,"操作成功",header, Environment.Dev,"item");
 
         //处理返回
         Integer flag=0;

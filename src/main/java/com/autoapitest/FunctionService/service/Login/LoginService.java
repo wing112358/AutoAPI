@@ -2,9 +2,11 @@ package com.autoapitest.FunctionService.service.Login;
 
 
 import com.alibaba.fastjson.JSONObject;
+import com.autoapitest.FunctionService.params.Common.Environment;
 import com.autoapitest.FunctionService.params.Common.Response;
 import com.autoapitest.FunctionService.params.Login.LoginReq;
 import com.autoapitest.FunctionService.service.BasciService;
+import com.autoapitest.FunctionService.system.utils.GetEnvironment;
 import com.autoapitest.FunctionService.system.utils.GetResponse;
 import com.autoapitest.FunctionService.system.utils.JSON;
 import com.autoapitest.FunctionService.system.utils.Tools;
@@ -37,9 +39,10 @@ public class LoginService  extends BasciService {
      *
      */
 
-    public JSONObject login(LoginReq param , String result, int flag) throws IOException {
+    public JSONObject login(LoginReq param , String result, int flag, Environment envir, String servicename) throws IOException {
 
 
+        String BASEURL=new GetEnvironment().getUrl(envir,servicename);
         String url="";
 
         if (flag == 0){

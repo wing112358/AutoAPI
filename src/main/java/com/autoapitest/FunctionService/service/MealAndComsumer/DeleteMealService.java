@@ -1,9 +1,11 @@
 package com.autoapitest.FunctionService.service.MealAndComsumer;
 
 import com.alibaba.fastjson.JSONObject;
+import com.autoapitest.FunctionService.params.Common.Environment;
 import com.autoapitest.FunctionService.params.Common.Response;
 import com.autoapitest.FunctionService.params.MealAndComsumer.DeleteMealReq;
 import com.autoapitest.FunctionService.service.BasciService;
+import com.autoapitest.FunctionService.system.utils.GetEnvironment;
 import com.autoapitest.FunctionService.system.utils.GetResponse;
 import com.autoapitest.FunctionService.system.utils.JSON;
 import com.autoapitest.FunctionService.system.utils.Tools;
@@ -30,8 +32,9 @@ public class DeleteMealService extends BasciService {
      * @param headers
      * @return
      */
-    public JSONObject deleteMeal(DeleteMealReq param, String result, Header[] headers) throws IOException {
+    public JSONObject deleteMeal(DeleteMealReq param, String result, Header[] headers, Environment envir, String servicename) throws IOException {
 
+        String BASEURL=new GetEnvironment().getUrl(envir,servicename);
         //发送请求
         Response response = new GetResponse().postJson(BASEURL+DELETE_MEAL_URL,param,null,headers);
 

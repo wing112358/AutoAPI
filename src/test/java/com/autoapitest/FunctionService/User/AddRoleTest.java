@@ -6,6 +6,7 @@ import com.autoapitest.FunctionService.BaseTest;
 import com.autoapitest.FunctionService.LoginTest;
 import com.autoapitest.FunctionService.MealAndComsumer.consumer.AddComsumerTest;
 import com.autoapitest.FunctionService.entity.RoleEntity;
+import com.autoapitest.FunctionService.params.Common.Environment;
 import com.autoapitest.FunctionService.params.User.AddRoleReq;
 import com.autoapitest.FunctionService.params.User.DeleteRoleReq;
 import com.autoapitest.FunctionService.system.utils.JSON;
@@ -95,7 +96,7 @@ public class AddRoleTest extends BaseTest {
 
         //发送请求
         try{
-            response = addroleservice.addRole(param,result,loginheader);
+            response = addroleservice.addRole(param,result,loginheader, Environment.Dev,"item");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -171,7 +172,7 @@ public class AddRoleTest extends BaseTest {
         DeleteRoleReq deleteparam = new DeleteRoleReq(Id);
 
         //调用删除角色接口
-        JSONObject deleteresponse =deleteroleservice.delteRole(deleteparam,"操作成功",header);
+        JSONObject deleteresponse =deleteroleservice.delteRole(deleteparam,"操作成功",header, Environment.Dev,"item");
 
         //处理返回
         Integer flag=0;

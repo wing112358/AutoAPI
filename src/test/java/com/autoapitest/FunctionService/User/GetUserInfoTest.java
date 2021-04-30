@@ -4,16 +4,14 @@ package com.autoapitest.FunctionService.User;
 import com.alibaba.fastjson.JSONObject;
 import com.autoapitest.FunctionService.BaseTest;
 import com.autoapitest.FunctionService.LoginTest;
+import com.autoapitest.FunctionService.params.Common.Environment;
 import com.autoapitest.FunctionService.system.utils.JSON;
 import com.autoapitest.FunctionService.system.utils.XmlHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.Header;
 import org.dom4j.DocumentException;
 import org.testng.ITestContext;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.IOException;
 
@@ -76,7 +74,7 @@ public class GetUserInfoTest extends BaseTest {
 
         //发送请求
         try {
-            response = getuserinfoservice.getUserInfo(result, loginheader);
+            response = getuserinfoservice.getUserInfo(result, loginheader, Environment.Dev,"item");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -103,6 +101,7 @@ public class GetUserInfoTest extends BaseTest {
 
 
     }
+
 
     @DataProvider(name = "getuserinfo")
     public Object[][] getUserInfoData() throws IOException, DocumentException {

@@ -3,6 +3,7 @@ package com.autoapitest.FunctionService.Function.addFunction;
 import com.alibaba.fastjson.JSONObject;
 import com.autoapitest.FunctionService.LoginTest;
 import com.autoapitest.FunctionService.entity.FunctionEntity;
+import com.autoapitest.FunctionService.params.Common.Environment;
 import com.autoapitest.FunctionService.params.Function.AddFunctionReq;
 import com.autoapitest.FunctionService.params.Function.DeleteFunctionReq;
 import com.autoapitest.FunctionService.system.utils.JSON;
@@ -75,7 +76,7 @@ public class AddFuncitonTest extends LoginTest {
         //发送请求
         try {
 
-            response = addservice.addfunction(param, result,loginheader );
+            response = addservice.addfunction(param, result,loginheader, Environment.Dev,"item" );
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -143,7 +144,7 @@ public class AddFuncitonTest extends LoginTest {
         //发送请求
         try {
 
-            response = addservice.addfunction(param, result,loginheader );
+            response = addservice.addfunction(param, result,loginheader, Environment.Dev,"item" );
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -214,7 +215,7 @@ public class AddFuncitonTest extends LoginTest {
         //发送请求
         try {
 
-            response = addservice.addfunction(param, result,loginheader );
+            response = addservice.addfunction(param, result,loginheader, Environment.Dev,"item" );
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -328,7 +329,7 @@ public class AddFuncitonTest extends LoginTest {
         //处理删除参数
         DeleteFunctionReq deleteparameter =  new DeleteFunctionReq(list);
 
-        JSONObject deleteresponse = deletefunctionservice.deletefunction(deleteparameter,"操作成功",headers);
+        JSONObject deleteresponse = deletefunctionservice.deletefunction(deleteparameter,"操作成功",headers, Environment.Dev,"item");
 
         Integer flag=0;
 
