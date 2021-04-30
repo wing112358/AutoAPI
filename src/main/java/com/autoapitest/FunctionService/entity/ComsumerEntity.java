@@ -30,9 +30,9 @@ public class ComsumerEntity {
      *是否删除：1 已删除 0 未删除
      */
     private Integer is_delete;
-    /**
-     *公司更新时间
-     */
+//    /**
+//     *公司更新时间
+//     */
 //    private Date customer_info_update_time;
 //    /**
 //     *公司创建时间
@@ -62,9 +62,9 @@ public class ComsumerEntity {
      *超时时间
      */
     private Timestamp timeout;
-    /**
-     *记录更新时间
-     */
+//    /**
+//     *记录更新时间
+//     */
 //    private Date customer_set_meal_update_time;
 //    /**
 //     *记录创建时间

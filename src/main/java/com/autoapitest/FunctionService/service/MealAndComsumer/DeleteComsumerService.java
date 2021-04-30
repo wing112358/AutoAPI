@@ -32,6 +32,7 @@ public class DeleteComsumerService extends BasciService {
      */
     public JSONObject deleteComsumer(DeleteConsumerReq param, String result, Header[] headers) throws IOException {
 
+
         //发送请求
         Response response = new GetResponse().postJson(BASEURL + DELETE_COMSUMER_URL, param, null, headers);
 

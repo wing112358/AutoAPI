@@ -2,7 +2,6 @@ package com.autoapitest.FunctionService.service;
 
 import java.util.ResourceBundle;
 
-
 /**
  * 基础数据服务
  *
@@ -11,7 +10,9 @@ import java.util.ResourceBundle;
 public class BasciService {
 
     ResourceBundle bundle = ResourceBundle.getBundle("application");
-    public String BASEURL = bundle.getString("internal_itemurl");
+
+    public String BASEURL =bundle.getString("Host.url");
+
 }
 
 

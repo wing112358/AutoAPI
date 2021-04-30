@@ -1,6 +1,7 @@
 package com.autoapitest.FunctionService;
 
-import com.autoapitest.FunctionService.mapper.*;
+import com.autoapitest.FunctionService.mapper.item.*;
+import com.autoapitest.FunctionService.mapper.own.AddFunctionTestMapper;
 import com.autoapitest.FunctionService.service.Function.AddFunctionService;
 import com.autoapitest.FunctionService.service.Function.DeleteFunctionService;
 import com.autoapitest.FunctionService.service.Function.GetFunctionTreeService;
@@ -87,6 +88,9 @@ public class BaseTest extends AbstractTestNGSpringContextTests {
 
     @Resource
     public UserMapper umapper;
+
+    @Resource
+    public AddFunctionTestMapper adfmapper;
 
 
 

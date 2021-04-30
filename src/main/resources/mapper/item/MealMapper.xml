@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.autoapitest.FunctionService.mapper.MealMapper">
+<mapper namespace="com.autoapitest.FunctionService.mapper.item.MealMapper">
     <resultMap id="BaseResultMap" type="com.autoapitest.FunctionService.entity.MealEntity">
         <id column="id" property="set_mealid" />
         <id column="name" property="name" />

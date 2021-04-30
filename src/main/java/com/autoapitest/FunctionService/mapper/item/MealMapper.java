@@ -1,4 +1,4 @@
-package com.autoapitest.FunctionService.mapper;
+package com.autoapitest.FunctionService.mapper.item;
 
 import com.autoapitest.FunctionService.entity.MealEntity;
 import org.apache.ibatis.annotations.Param;
