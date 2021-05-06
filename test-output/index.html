@@ -35,6 +35,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -48,7 +49,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Apr 30, 2021 05:55:28 PM</span>
+                    <span class='label suite-start-time blue darken-3'>May 6, 2021 02:07:53 PM</span>
 				</a>
 			</li>
 			<li>
@@ -73,7 +74,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+											<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -137,10 +138,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>9</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>9</span> others
 				</div>
 			</div>
 		</div>
@@ -152,10 +153,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>9</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>9</span> others
 				</div>
 			</div>
 		</div>
@@ -170,19 +171,19 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf skip' status='skip' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>权限测试</span>
-						<span class='test-time'>Apr 30, 2021 05:55:28 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>May 6, 2021 02:07:53 PM</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 30, 2021 05:55:28 PM</span>
-	<span class='label end-time'>Apr 30, 2021 05:55:28 PM</span>
+	<span class='label start-time'>May 6, 2021 02:07:53 PM</span>
+	<span class='label end-time'>May 6, 2021 02:07:53 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
-	<div class='test-desc'>Pass: 9 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-desc'>Pass: 0 ; Fail: 0 ; Skip: 9 ; </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>权限测试</span>
@@ -190,20 +191,20 @@
 	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1  pass' status='pass' test-id='2'>
+				<li class='node level-1  skip' status='skip' test-id='2'>
 					<div class='collapsible-header'>
 						<div class='node-name'>权限测试 : 权限流程测试</div>						
-						<span class='node-time'>Apr 30, 2021 05:55:00 PM</span>
-						<span class='node-duration'>0h 0m 28s+347ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>May 6, 2021 02:07:48 PM</span>
+						<span class='node-duration'>0h 0m 5s+39ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2 leaf pass' status='pass' test-id='3'>
+				<li class='node level-2 leaf skip' status='skip' test-id='3'>
 					<div class='collapsible-header'>
 						<div class='node-name'>AddFunctionReq(currentId=129, name=测试新增权限777, pid...</div>						
-						<span class='node-time'>Apr 30, 2021 05:55:04 PM</span>
-						<span class='node-duration'>0h 0m 24s+326ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>May 6, 2021 02:07:52 PM</span>
+						<span class='node-duration'>0h 0m 0s+473ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
@@ -220,22 +221,52 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:55:28 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>2:07:53 PM</td>
+													<td class='step-details'><pre>java.lang.AssertionError: login-正常接口失败，响应为:404
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.autoapitest.FunctionService.service.Login.LoginService.login(LoginService.java:73)
+	at com.autoapitest.FunctionService.LoginTest.loginNormal(LoginTest.java:36)
+	at com.autoapitest.FunctionService.Function.addFunction.AddFuncitonTest.getHeaders(AddFuncitonTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='4'>
+				<li class='node level-2 leaf skip' status='skip' test-id='4'>
 					<div class='collapsible-header'>
-						<div class='node-name'>AddFunctionReq(currentId=null, name=测试新增页面777, pi...</div>						
-						<span class='node-time'>Apr 30, 2021 05:55:06 PM</span>
-						<span class='node-duration'>0h 0m 21s+797ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>addPage</div>						
+						<span class='node-time'>May 6, 2021 02:07:52 PM</span>
+						<span class='node-duration'>0h 0m 0s+475ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
@@ -252,22 +283,41 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:55:28 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>2:07:53 PM</td>
+													<td class='step-details'><pre>java.lang.Throwable: Method AddFuncitonTest.addPage(com.autoapitest.FunctionService.params.Function.AddFunctionReq,java.lang.String)[pri:0, instance:com.autoapitest.FunctionService.Function.addFunction.AddFuncitonTest@77eca502] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='5'>
+				<li class='node level-2 leaf skip' status='skip' test-id='5'>
 					<div class='collapsible-header'>
-						<div class='node-name'>AddFunctionReq(currentId=null, name=测试新增按钮777, pi...</div>						
-						<span class='node-time'>Apr 30, 2021 05:55:08 PM</span>
-						<span class='node-duration'>0h 0m 19s+582ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>addButton</div>						
+						<span class='node-time'>May 6, 2021 02:07:52 PM</span>
+						<span class='node-duration'>0h 0m 0s+475ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
@@ -284,22 +334,41 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:55:28 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>2:07:53 PM</td>
+													<td class='step-details'><pre>java.lang.Throwable: Method AddFuncitonTest.addButton(com.autoapitest.FunctionService.params.Function.AddFunctionReq,java.lang.String)[pri:0, instance:com.autoapitest.FunctionService.Function.addFunction.AddFuncitonTest@77eca502] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='6'>
+				<li class='node level-2 leaf skip' status='skip' test-id='6'>
 					<div class='collapsible-header'>
-						<div class='node-name'>AddMealReq(duration=永久, functionIdList=[329, 330,...</div>						
-						<span class='node-time'>Apr 30, 2021 05:55:11 PM</span>
-						<span class='node-duration'>0h 0m 16s+847ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>AddMealReq(duration=永久, functionIdList=[], id=nul...</div>						
+						<span class='node-time'>May 6, 2021 02:07:52 PM</span>
+						<span class='node-duration'>0h 0m 0s+382ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
@@ -316,10 +385,46 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:55:28 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>2:07:53 PM</td>
+													<td class='step-details'><pre>java.lang.AssertionError: login-正常接口失败，响应为:404
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.autoapitest.FunctionService.service.Login.LoginService.login(LoginService.java:73)
+	at com.autoapitest.FunctionService.LoginTest.loginNormal(LoginTest.java:36)
+	at com.autoapitest.FunctionService.MealAndComsumer.meal.AddMealTest.getHeaders(AddMealTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
@@ -328,20 +433,20 @@
 				</li>
 						</ul>
 				</li>
-				<li class='node level-1  pass' status='pass' test-id='7'>
+				<li class='node level-1  skip' status='skip' test-id='7'>
 					<div class='collapsible-header'>
 						<div class='node-name'>权限测试 : 增加客户后操作测试</div>						
-						<span class='node-time'>Apr 30, 2021 05:55:13 PM</span>
-						<span class='node-duration'>0h 0m 14s+994ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>May 6, 2021 02:07:52 PM</span>
+						<span class='node-duration'>0h 0m 0s+380ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2 leaf pass' status='pass' test-id='8'>
+				<li class='node level-2 leaf skip' status='skip' test-id='8'>
 					<div class='collapsible-header'>
 						<div class='node-name'>AddConsumerReq(account=17800000001, id=null, name...</div>						
-						<span class='node-time'>Apr 30, 2021 05:55:14 PM</span>
-						<span class='node-duration'>0h 0m 14s+357ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>May 6, 2021 02:07:52 PM</span>
+						<span class='node-duration'>0h 0m 0s+309ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
@@ -358,22 +463,58 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:55:28 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>2:07:53 PM</td>
+													<td class='step-details'><pre>java.lang.AssertionError: login-正常接口失败，响应为:404
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.autoapitest.FunctionService.service.Login.LoginService.login(LoginService.java:73)
+	at com.autoapitest.FunctionService.LoginTest.loginNormal(LoginTest.java:36)
+	at com.autoapitest.FunctionService.MealAndComsumer.consumer.AddComsumerTest.getHeaders(AddComsumerTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='9'>
+				<li class='node level-2 leaf skip' status='skip' test-id='9'>
 					<div class='collapsible-header'>
-						<div class='node-name'>AddRoleReq(customerId=111, functionIds=[281, 282,...</div>						
-						<span class='node-time'>Apr 30, 2021 05:55:18 PM</span>
-						<span class='node-duration'>0h 0m 9s+624ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>AddRoleReq(customerId=null, functionIds=[281, 282...</div>						
+						<span class='node-time'>May 6, 2021 02:07:53 PM</span>
+						<span class='node-duration'>0h 0m 0s+224ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
@@ -390,22 +531,58 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:55:28 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>2:07:53 PM</td>
+													<td class='step-details'><pre>java.lang.AssertionError: login-正常接口失败，响应为:404
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.autoapitest.FunctionService.service.Login.LoginService.login(LoginService.java:73)
+	at com.autoapitest.FunctionService.LoginTest.loginNormal(LoginTest.java:36)
+	at com.autoapitest.FunctionService.User.AddRoleTest.getHeaders(AddRoleTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='10'>
+				<li class='node level-2 leaf skip' status='skip' test-id='10'>
 					<div class='collapsible-header'>
 						<div class='node-name'>AddUserReq(avatar=https://shumei-official-websit....</div>						
-						<span class='node-time'>Apr 30, 2021 05:55:21 PM</span>
-						<span class='node-duration'>0h 0m 6s+508ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>May 6, 2021 02:07:53 PM</span>
+						<span class='node-duration'>0h 0m 0s+147ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
@@ -422,22 +599,58 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:55:28 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>2:07:53 PM</td>
+													<td class='step-details'><pre>java.lang.AssertionError: login-正常接口失败，响应为:404
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.autoapitest.FunctionService.service.Login.LoginService.login(LoginService.java:73)
+	at com.autoapitest.FunctionService.LoginTest.loginNormal(LoginTest.java:36)
+	at com.autoapitest.FunctionService.User.AddUserTest.getHeaders(AddUserTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='11'>
+				<li class='node level-2 leaf skip' status='skip' test-id='11'>
 					<div class='collapsible-header'>
 						<div class='node-name'>UpdateUserReq(avatar=null, cooperationTeam=null, ...</div>						
-						<span class='node-time'>Apr 30, 2021 05:55:25 PM</span>
-						<span class='node-duration'>0h 0m 3s+282ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>May 6, 2021 02:07:53 PM</span>
+						<span class='node-duration'>0h 0m 0s+80ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
@@ -455,22 +668,58 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:55:28 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>2:07:53 PM</td>
+													<td class='step-details'><pre>java.lang.AssertionError: login-正常接口失败，响应为:404
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.autoapitest.FunctionService.service.Login.LoginService.login(LoginService.java:73)
+	at com.autoapitest.FunctionService.LoginTest.loginNormal(LoginTest.java:36)
+	at com.autoapitest.FunctionService.User.UpdateUserInfoTest.getHeaders(UpdateUserInfoTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='12'>
+				<li class='node level-2 leaf skip' status='skip' test-id='12'>
 					<div class='collapsible-header'>
-						<div class='node-name'>操作成功</div>						
-						<span class='node-time'>Apr 30, 2021 05:55:27 PM</span>
-						<span class='node-duration'>0h 0m 0s+618ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>getFunctionInfo</div>						
+						<span class='node-time'>May 6, 2021 02:07:53 PM</span>
+						<span class='node-duration'>0h 0m 0s+70ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
@@ -487,10 +736,29 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:55:28 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>2:07:53 PM</td>
+													<td class='step-details'><pre>java.lang.Throwable: Method GetFunctionTreeTest.getFunctionInfo(java.lang.String)[pri:0, instance:com.autoapitest.FunctionService.Function.getFunction.GetFunctionTreeTest@7ea9e1e2] depends on not successfully finished methods in group "updateuserinfo"
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
@@ -556,14 +824,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>权限测试</span>
 						<span class='category-status right'>
-							<span class='label pass'>12</span>
+							<span class='label others'>12</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 12</span>
 							
 							
+							<span class='label yellow darken-2 white-text'>Others: 12</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -577,64 +845,64 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 30, 2021 05:55:28 PM</td>
+										<td>May 6, 2021 02:07:53 PM</td>
 										<td class='linked' test-id='1'>权限测试</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:00 PM</td>
+										<td>May 6, 2021 02:07:48 PM</td>
 										<td class='linked' test-id='2'>权限测试.权限流程测试</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:04 PM</td>
+										<td>May 6, 2021 02:07:52 PM</td>
 										<td class='linked' test-id='3'>权限测试.权限流程测试.AddFunctionReq(currentId=129, name=测试新增权限777, pid...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:06 PM</td>
-										<td class='linked' test-id='4'>权限测试.权限流程测试.AddFunctionReq(currentId=null, name=测试新增页面777, pi...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>May 6, 2021 02:07:52 PM</td>
+										<td class='linked' test-id='4'>权限测试.权限流程测试.addPage</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:08 PM</td>
-										<td class='linked' test-id='5'>权限测试.权限流程测试.AddFunctionReq(currentId=null, name=测试新增按钮777, pi...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>May 6, 2021 02:07:52 PM</td>
+										<td class='linked' test-id='5'>权限测试.权限流程测试.addButton</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:11 PM</td>
-										<td class='linked' test-id='6'>权限测试.权限流程测试.AddMealReq(duration=永久, functionIdList=[329, 330,...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>May 6, 2021 02:07:52 PM</td>
+										<td class='linked' test-id='6'>权限测试.权限流程测试.AddMealReq(duration=永久, functionIdList=[], id=nul...</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:13 PM</td>
+										<td>May 6, 2021 02:07:52 PM</td>
 										<td class='linked' test-id='7'>权限测试.增加客户后操作测试</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:14 PM</td>
+										<td>May 6, 2021 02:07:52 PM</td>
 										<td class='linked' test-id='8'>权限测试.增加客户后操作测试.AddConsumerReq(account=17800000001, id=null, name...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:18 PM</td>
-										<td class='linked' test-id='9'>权限测试.增加客户后操作测试.AddRoleReq(customerId=111, functionIds=[281, 282,...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>May 6, 2021 02:07:53 PM</td>
+										<td class='linked' test-id='9'>权限测试.增加客户后操作测试.AddRoleReq(customerId=null, functionIds=[281, 282...</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:21 PM</td>
+										<td>May 6, 2021 02:07:53 PM</td>
 										<td class='linked' test-id='10'>权限测试.增加客户后操作测试.AddUserReq(avatar=https://shumei-official-websit....</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:25 PM</td>
+										<td>May 6, 2021 02:07:53 PM</td>
 										<td class='linked' test-id='11'>权限测试.增加客户后操作测试.UpdateUserReq(avatar=null, cooperationTeam=null, ...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:27 PM</td>
-										<td class='linked' test-id='12'>权限测试.增加客户后操作测试.操作成功</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>May 6, 2021 02:07:53 PM</td>
+										<td class='linked' test-id='12'>权限测试.增加客户后操作测试.getFunctionInfo</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -645,14 +913,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>权限流程测试</span>
 						<span class='category-status right'>
-							<span class='label pass'>5</span>
+							<span class='label others'>5</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 5</span>
 							
 							
+							<span class='label yellow darken-2 white-text'>Others: 5</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -666,29 +934,29 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 30, 2021 05:55:00 PM</td>
+										<td>May 6, 2021 02:07:48 PM</td>
 										<td class='linked' test-id='2'>权限测试.权限流程测试</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:04 PM</td>
+										<td>May 6, 2021 02:07:52 PM</td>
 										<td class='linked' test-id='3'>权限测试.权限流程测试.AddFunctionReq(currentId=129, name=测试新增权限777, pid...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:06 PM</td>
-										<td class='linked' test-id='4'>权限测试.权限流程测试.AddFunctionReq(currentId=null, name=测试新增页面777, pi...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>May 6, 2021 02:07:52 PM</td>
+										<td class='linked' test-id='4'>权限测试.权限流程测试.addPage</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:08 PM</td>
-										<td class='linked' test-id='5'>权限测试.权限流程测试.AddFunctionReq(currentId=null, name=测试新增按钮777, pi...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>May 6, 2021 02:07:52 PM</td>
+										<td class='linked' test-id='5'>权限测试.权限流程测试.addButton</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:11 PM</td>
-										<td class='linked' test-id='6'>权限测试.权限流程测试.AddMealReq(duration=永久, functionIdList=[329, 330,...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>May 6, 2021 02:07:52 PM</td>
+										<td class='linked' test-id='6'>权限测试.权限流程测试.AddMealReq(duration=永久, functionIdList=[], id=nul...</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -699,14 +967,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>增加客户后操作测试</span>
 						<span class='category-status right'>
-							<span class='label pass'>6</span>
+							<span class='label others'>6</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 6</span>
 							
 							
+							<span class='label yellow darken-2 white-text'>Others: 6</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -720,34 +988,34 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 30, 2021 05:55:13 PM</td>
+										<td>May 6, 2021 02:07:52 PM</td>
 										<td class='linked' test-id='7'>权限测试.增加客户后操作测试</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:14 PM</td>
+										<td>May 6, 2021 02:07:52 PM</td>
 										<td class='linked' test-id='8'>权限测试.增加客户后操作测试.AddConsumerReq(account=17800000001, id=null, name...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:18 PM</td>
-										<td class='linked' test-id='9'>权限测试.增加客户后操作测试.AddRoleReq(customerId=111, functionIds=[281, 282,...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>May 6, 2021 02:07:53 PM</td>
+										<td class='linked' test-id='9'>权限测试.增加客户后操作测试.AddRoleReq(customerId=null, functionIds=[281, 282...</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:21 PM</td>
+										<td>May 6, 2021 02:07:53 PM</td>
 										<td class='linked' test-id='10'>权限测试.增加客户后操作测试.AddUserReq(avatar=https://shumei-official-websit....</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:25 PM</td>
+										<td>May 6, 2021 02:07:53 PM</td>
 										<td class='linked' test-id='11'>权限测试.增加客户后操作测试.UpdateUserReq(avatar=null, cooperationTeam=null, ...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2021 05:55:27 PM</td>
-										<td class='linked' test-id='12'>权限测试.增加客户后操作测试.操作成功</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>May 6, 2021 02:07:53 PM</td>
+										<td class='linked' test-id='12'>权限测试.增加客户后操作测试.getFunctionInfo</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -758,14 +1026,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>updateuserinfo</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label others'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
+							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -779,9 +1047,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 30, 2021 05:55:25 PM</td>
+										<td>May 6, 2021 02:07:53 PM</td>
 										<td class='linked' test-id='11'>权限测试.增加客户后操作测试.UpdateUserReq(avatar=null, cooperationTeam=null, ...</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -800,6 +1068,395 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>6</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>May 6, 2021 02:07:52 PM</td>
+                                                        <td class='linked' test-id='3'>权限测试.权限流程测试.AddFunctionReq(currentId=129, name=测试新增权限777, pid...</td>
+                                                        <td><pre><pre>java.lang.AssertionError: login-正常接口失败，响应为:404
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.autoapitest.FunctionService.service.Login.LoginService.login(LoginService.java:73)
+	at com.autoapitest.FunctionService.LoginTest.loginNormal(LoginTest.java:36)
+	at com.autoapitest.FunctionService.Function.addFunction.AddFuncitonTest.getHeaders(AddFuncitonTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 6, 2021 02:07:52 PM</td>
+                                                        <td class='linked' test-id='6'>权限测试.权限流程测试.AddMealReq(duration=永久, functionIdList=[], id=nul...</td>
+                                                        <td><pre><pre>java.lang.AssertionError: login-正常接口失败，响应为:404
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.autoapitest.FunctionService.service.Login.LoginService.login(LoginService.java:73)
+	at com.autoapitest.FunctionService.LoginTest.loginNormal(LoginTest.java:36)
+	at com.autoapitest.FunctionService.MealAndComsumer.meal.AddMealTest.getHeaders(AddMealTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 6, 2021 02:07:52 PM</td>
+                                                        <td class='linked' test-id='8'>权限测试.增加客户后操作测试.AddConsumerReq(account=17800000001, id=null, name...</td>
+                                                        <td><pre><pre>java.lang.AssertionError: login-正常接口失败，响应为:404
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.autoapitest.FunctionService.service.Login.LoginService.login(LoginService.java:73)
+	at com.autoapitest.FunctionService.LoginTest.loginNormal(LoginTest.java:36)
+	at com.autoapitest.FunctionService.MealAndComsumer.consumer.AddComsumerTest.getHeaders(AddComsumerTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 6, 2021 02:07:53 PM</td>
+                                                        <td class='linked' test-id='9'>权限测试.增加客户后操作测试.AddRoleReq(customerId=null, functionIds=[281, 282...</td>
+                                                        <td><pre><pre>java.lang.AssertionError: login-正常接口失败，响应为:404
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.autoapitest.FunctionService.service.Login.LoginService.login(LoginService.java:73)
+	at com.autoapitest.FunctionService.LoginTest.loginNormal(LoginTest.java:36)
+	at com.autoapitest.FunctionService.User.AddRoleTest.getHeaders(AddRoleTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 6, 2021 02:07:53 PM</td>
+                                                        <td class='linked' test-id='10'>权限测试.增加客户后操作测试.AddUserReq(avatar=https://shumei-official-websit....</td>
+                                                        <td><pre><pre>java.lang.AssertionError: login-正常接口失败，响应为:404
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.autoapitest.FunctionService.service.Login.LoginService.login(LoginService.java:73)
+	at com.autoapitest.FunctionService.LoginTest.loginNormal(LoginTest.java:36)
+	at com.autoapitest.FunctionService.User.AddUserTest.getHeaders(AddUserTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 6, 2021 02:07:53 PM</td>
+                                                        <td class='linked' test-id='11'>权限测试.增加客户后操作测试.UpdateUserReq(avatar=null, cooperationTeam=null, ...</td>
+                                                        <td><pre><pre>java.lang.AssertionError: login-正常接口失败，响应为:404
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.autoapitest.FunctionService.service.Login.LoginService.login(LoginService.java:73)
+	at com.autoapitest.FunctionService.LoginTest.loginNormal(LoginTest.java:36)
+	at com.autoapitest.FunctionService.User.UpdateUserInfoTest.getHeaders(UpdateUserInfoTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.Throwable</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>May 6, 2021 02:07:52 PM</td>
+                                                        <td class='linked' test-id='4'>权限测试.权限流程测试.addPage</td>
+                                                        <td><pre><pre>java.lang.Throwable: Method AddFuncitonTest.addPage(com.autoapitest.FunctionService.params.Function.AddFunctionReq,java.lang.String)[pri:0, instance:com.autoapitest.FunctionService.Function.addFunction.AddFuncitonTest@77eca502] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 6, 2021 02:07:52 PM</td>
+                                                        <td class='linked' test-id='5'>权限测试.权限流程测试.addButton</td>
+                                                        <td><pre><pre>java.lang.Throwable: Method AddFuncitonTest.addButton(com.autoapitest.FunctionService.params.Function.AddFunctionReq,java.lang.String)[pri:0, instance:com.autoapitest.FunctionService.Function.addFunction.AddFuncitonTest@77eca502] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 6, 2021 02:07:53 PM</td>
+                                                        <td class='linked' test-id='12'>权限测试.增加客户后操作测试.getFunctionInfo</td>
+                                                        <td><pre><pre>java.lang.Throwable: Method GetFunctionTreeTest.getFunctionInfo(java.lang.String)[pri:0, instance:com.autoapitest.FunctionService.Function.getFunction.GetFunctionTreeTest@7ea9e1e2] depends on not successfully finished methods in group "updateuserinfo"
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -821,19 +1478,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 30, 2021 05:55:28 PM</div>
+					<div class='panel-lead'>May 6, 2021 02:07:53 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 30, 2021 05:55:28 PM</div>
+			 		<div class='panel-lead'>May 6, 2021 02:07:53 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>53ms</div>
+					<div class='panel-lead'>47ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -849,27 +1506,27 @@
 						</tr>
 						<tr>
 							<td>权限测试</td>
+							<td>0</td>
+							<td>0</td>
 							<td>12</td>
-							<td>0</td>
-							<td>0</td>
 						</tr>
 						<tr>
 							<td>权限流程测试</td>
+							<td>0</td>
+							<td>0</td>
 							<td>5</td>
-							<td>0</td>
-							<td>0</td>
 						</tr>
 						<tr>
 							<td>增加客户后操作测试</td>
+							<td>0</td>
+							<td>0</td>
 							<td>6</td>
-							<td>0</td>
-							<td>0</td>
 						</tr>
 						<tr>
 							<td>updateuserinfo</td>
+							<td>0</td>
+							<td>0</td>
 							<td>1</td>
-							<td>0</td>
-							<td>0</td>
 						</tr>
 					</table>
 				</div>
@@ -884,22 +1541,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 9,
+				passParent: 0,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 0,
+				skipParent: 9,
+				exceptionsParent: 9,
 				
-				passChild: 9,
+				passChild: 0,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 9,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 9,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

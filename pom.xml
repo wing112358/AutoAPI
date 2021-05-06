@@ -161,10 +161,10 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <systemPropertyVariables>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <TestEnvironment>${ENV}</TestEnvironment>
-                    </systemPropertyVariables>
+                    <!--<systemPropertyVariables>-->
+                        <!--&lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+                        <!--<TestEnvironment>${ENV}</TestEnvironment>-->
+                    <!--</systemPropertyVariables>-->
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
                         <suiteXmlFile>test-xml/${xmlFileName}}</suiteXmlFile>

@@ -17,40 +17,40 @@
             </class>
         </classes>
     </test>
-    <test name="增加客户后操作测试">
-        <classes>
-            <class name="com.autoapitest.FunctionService.MealAndComsumer.consumer.AddComsumerTest">
-                <methods>
-                    <include name="addComsumer" description="新增客户测试"></include>
-                </methods>
-            </class>
-            <class name="com.autoapitest.FunctionService.User.AddRoleTest">
-                <methods>
-                    <include name="addRole" description="新增角色测试"></include>
-                </methods>
-            </class>
-            <class name="com.autoapitest.FunctionService.User.AddUserTest">
-                <methods>
-                    <include name="addUser" description="新增用户测试"></include>
-                </methods>
-            </class>
-            <class name="com.autoapitest.FunctionService.User.UpdateUserInfoTest">
-                <methods>
-                    <include name="updateUserinfo" description="更新用户测试"></include>
-                </methods>
-            </class>
-            <class name="com.autoapitest.FunctionService.Function.getFunction.GetFunctionTreeTest">
-                <methods>
-                    <include name="getFunctionInfo" description="用户查询权限测试"></include>
-                </methods>
-            </class>
-            <!--<class name="com.autoapitest.FunctionService.User.GetUserInfoTest">-->
-            <!--<methods>-->
-            <!--<include name="getUserInfo" description="用户查询权限测试"></include>-->
-            <!--</methods>-->
+    <!--<test name="增加客户后操作测试">-->
+        <!--<classes>-->
+            <!--<class name="com.autoapitest.FunctionService.MealAndComsumer.consumer.AddComsumerTest">-->
+                <!--<methods>-->
+                    <!--<include name="addComsumer" description="新增客户测试"></include>-->
+                <!--</methods>-->
             <!--</class>-->
-        </classes>
-    </test>
+            <!--<class name="com.autoapitest.FunctionService.User.AddRoleTest">-->
+                <!--<methods>-->
+                    <!--<include name="addRole" description="新增角色测试"></include>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.autoapitest.FunctionService.User.AddUserTest">-->
+                <!--<methods>-->
+                    <!--<include name="addUser" description="新增用户测试"></include>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.autoapitest.FunctionService.User.UpdateUserInfoTest">-->
+                <!--<methods>-->
+                    <!--<include name="updateUserinfo" description="更新用户测试"></include>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.autoapitest.FunctionService.Function.getFunction.GetFunctionTreeTest">-->
+                <!--<methods>-->
+                    <!--<include name="getFunctionInfo" description="用户查询权限测试"></include>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--&lt;!&ndash;<class name="com.autoapitest.FunctionService.User.GetUserInfoTest">&ndash;&gt;-->
+            <!--&lt;!&ndash;<methods>&ndash;&gt;-->
+            <!--&lt;!&ndash;<include name="getUserInfo" description="用户查询权限测试"></include>&ndash;&gt;-->
+            <!--&lt;!&ndash;</methods>&ndash;&gt;-->
+            <!--&lt;!&ndash;</class>&ndash;&gt;-->
+        <!--</classes>-->
+    <!--</test>-->
     <listeners>
         <listener class-name="com.autoapitest.FunctionService.system.utils.TestngListener"/>
     </listeners>
