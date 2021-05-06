@@ -200,10 +200,7 @@
 
     </build>
 
-    <properties>
-        <xmlFileName>mainTest.xml</xmlFileName>
-        <xmlFileName>ComsumerTest.xml</xmlFileName>
-    </properties>
+
 
 
 </project>
