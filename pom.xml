@@ -167,7 +167,7 @@
                     <!--</systemPropertyVariables>-->
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
-                        <suiteXmlFile>test-xml/${xmlFileName}}</suiteXmlFile>
+                        <suiteXmlFile>test-xml/${xmlFileName}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
